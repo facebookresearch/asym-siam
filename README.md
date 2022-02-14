@@ -1,7 +1,7 @@
 # Asym: On the Importance of Asymmetry for Siamese Representation Learning
 
 <p align="center">
-  <img src="https://github.com/haooooooqi/asymm/blob/main/figure/teaser.png" width="300">
+  <img src="https://github.com/fairinternal/asym-siam/blob/main/figure/teaser.png" width="300">
 </p>
 
 This is a PyTorch implementation of the [Asym paper]():
