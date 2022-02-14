@@ -130,8 +130,8 @@ Linear classification results on ImageNet using this repo with 8 NVIDIA V100 GPU
 <td align="center"></td>
 <td align="center"></td>
 <td align="center"></td>
-<td align="center">[checkpoint](https://dl.fbaipublicfiles.com/asym-siam/checkpoint_baseline_100ep.pth)</td>
-<td align="center">e82ede</td>
+<td align="center"><a href="https://dl.fbaipublicfiles.com/asym-siam/checkpoint_baseline_100ep.pth">download</a></td>
+<td align="center"><tt>e82ede</tt></td>
 </tr>
 
 <tr><td align="left">MoCo BN<br/> +MultiCrop</td>
@@ -139,8 +139,8 @@ Linear classification results on ImageNet using this repo with 8 NVIDIA V100 GPU
 <td align="center"></td>
 <td align="center"></td>
 <td align="center"></td>
-<td align="center">[checkpoint](https://dl.fbaipublicfiles.com/asym-siam/checkpoint_multicrop_100ep.pth)</td>
-<td align="center">892916</td>
+<td align="center"><a href="https://dl.fbaipublicfiles.com/asym-siam/checkpoint_multicrop_100ep.pth">download</a></td>
+<td align="center"><tt>892916</tt></td>
 </tr>
   
 <tr><td align="left">MoCo BN<br/> +ScaleMix</td>
@@ -148,8 +148,8 @@ Linear classification results on ImageNet using this repo with 8 NVIDIA V100 GPU
 <td align="center"></td>
 <td align="center"></td>
 <td align="center"></td>
-<td align="center">[checkpoint](https://dl.fbaipublicfiles.com/asym-siam/checkpoint_scalemix_100ep.pth)</td>
-<td align="center">3f5d79</td>
+<td align="center"><a href="https://dl.fbaipublicfiles.com/asym-siam/checkpoint_scalemix_100ep.pth">download</a></td>
+<td align="center"><tt>3f5d79</tt></td>
 </tr>
 
 <tr><td align="left">MoCo BN<br/> +AsymAug</td>
@@ -157,8 +157,8 @@ Linear classification results on ImageNet using this repo with 8 NVIDIA V100 GPU
 <td align="center"></td>
 <td align="center"></td>
 <td align="center"></td>
-<td align="center">[checkpoint](https://dl.fbaipublicfiles.com/asym-siam/checkpoint_aug_100ep.pth)</td>
-<td align="center">d94e24</td>
+<td align="center"><a href="https://dl.fbaipublicfiles.com/asym-siam/checkpoint_aug_100ep.pth">download</a></td>
+<td align="center"><tt>d94e24</tt></td>
 </tr>
   
 <tr><td align="left">MoCo BN<br/> +AsymBN</td>
@@ -166,8 +166,8 @@ Linear classification results on ImageNet using this repo with 8 NVIDIA V100 GPU
 <td align="center"></td>
 <td align="center"></td>
 <td align="center"></td>
-<td align="center">[checkpoint](https://dl.fbaipublicfiles.com/asym-siam/checkpoint_asym_bn_100ep.pth)</td>
-<td align="center">2bf912</td>
+<td align="center"><a href="https://dl.fbaipublicfiles.com/asym-siam/checkpoint_asym_bn_100ep.pth">download</a></td>
+<td align="center"><tt>2bf912</tt></td>
 </tr>
   
 <tr><td align="left">MoCo BN<br/> +MeanEnc</td>
@@ -175,8 +175,8 @@ Linear classification results on ImageNet using this repo with 8 NVIDIA V100 GPU
 <td align="center"></td>
 <td align="center"></td>
 <td align="center"></td>
-<td align="center">[checkpoint](https://dl.fbaipublicfiles.com/asym-siam/checkpoint_mean_enc_100ep.pth)</td>
-<td align="center">599801</td>
+<td align="center"><a href="https://dl.fbaipublicfiles.com/asym-siam/checkpoint_mean_enc_100ep.pth">download</a></td>
+<td align="center"><tt>599801</tt></td>
 </tr>
   
   
