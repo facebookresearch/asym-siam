@@ -36,7 +36,7 @@ git clone https://github.com/facebookresearch/asym-siam & cd asym-siam
 
 This implementation only supports **multi-gpu**, **DistributedDataParallel** training, which is faster and simpler; single-gpu or DataParallel training is not supported.
 
-### 1.1 MoCo BN Baseline
+### 1.1 Our MoCo Baseline (BN in projector MLP)
 To do unsupervised pre-training of a ResNet-50 model on ImageNet in an 8-gpu machine, run:
 ```
 python main_moco.py \
@@ -48,7 +48,7 @@ python main_moco.py \
 ```
 This script uses all the default hyper-parameters as described in the MoCo v2 paper. We only upgrade the projector to a MLP with BN layer.
 
-### 1.2 MoCo BN + MultiCrop
+### 1.2 MoCo + MultiCrop
 ```
 python main_moco.py \
   -a resnet50 \
@@ -59,7 +59,7 @@ python main_moco.py \
 ```
 By simply setting  **--enable-multicrop** to true, we can have asym MultiCrop on source side.
 
-### 1.3 MoCo BN + ScaleMix
+### 1.3 MoCo + ScaleMix
 ```
 python main_moco.py \
   -a resnet50 \
@@ -70,7 +70,7 @@ python main_moco.py \
 ```
 By simply setting  **--enable-scalemix** to true, we can have asym ScaleMix on source side.
 
-### 1.4 MoCo BN + AsymAug
+### 1.4 MoCo + AsymAug
 ```
 python main_moco.py \
   -a resnet50 \
@@ -81,7 +81,7 @@ python main_moco.py \
 ```
 By simply setting  **--enable-asymm-aug** to true, we can have Stronger Augmentation on source side and Weaker Augmentation on target side.
 
-### 1.5 MoCo BN + AsymBN
+### 1.5 MoCo + AsymBN
 ```
 python main_moco.py \
   -a resnet50 \
@@ -92,7 +92,7 @@ python main_moco.py \
 ```
 By simply setting  **--enable-asym-bn** to true, we can have asym BN on target side (sync BN for target).
 
-### 1.6 MoCo BN + MeanEnc
+### 1.6 MoCo + MeanEnc
 ```
 python main_moco.py \
   -a resnet50 \
@@ -127,7 +127,7 @@ Linear classification results on ImageNet using this repo with 8 NVIDIA V100 GPU
 <th valign="bottom">model</th>
 <th valign="bottom">md5</th>
 <!-- TABLE BODY -->
-<tr><td align="left">MoCo BN</td>
+<tr><td align="left">Our MoCo</td>
 <td align="center">100</td>
 <td align="center">23.6h</td>
 <td align="center">65.8</td>
@@ -135,7 +135,7 @@ Linear classification results on ImageNet using this repo with 8 NVIDIA V100 GPU
 <td align="center"><tt>e82ede</tt></td>
 </tr>
 
-<tr><td align="left">MoCo BN<br/> +MultiCrop</td>
+<tr><td align="left">MoCo<br/> +MultiCrop</td>
 <td align="center">100</td>
 <td align="center">50.8h</td>
 <td align="center">69.9</td>
@@ -143,7 +143,7 @@ Linear classification results on ImageNet using this repo with 8 NVIDIA V100 GPU
 <td align="center"><tt>892916</tt></td>
 </tr>
   
-<tr><td align="left">MoCo BN<br/> +ScaleMix</td>
+<tr><td align="left">MoCo<br/> +ScaleMix</td>
 <td align="center">100</td>
 <td align="center">30.7h</td>
 <td align="center">67.6</td>
@@ -151,7 +151,7 @@ Linear classification results on ImageNet using this repo with 8 NVIDIA V100 GPU
 <td align="center"><tt>3f5d79</tt></td>
 </tr>
 
-<tr><td align="left">MoCo BN<br/> +AsymAug</td>
+<tr><td align="left">MoCo<br/> +AsymAug</td>
 <td align="center">100</td>
 <td align="center">24.0h</td>
 <td align="center">67.2</td>
@@ -159,7 +159,7 @@ Linear classification results on ImageNet using this repo with 8 NVIDIA V100 GPU
 <td align="center"><tt>d94e24</tt></td>
 </tr>
   
-<tr><td align="left">MoCo BN<br/> +AsymBN</td>
+<tr><td align="left">MoCo<br/> +AsymBN</td>
 <td align="center">100</td>
 <td align="center">23.8h</td>
 <td align="center">66.3</td>
@@ -167,7 +167,7 @@ Linear classification results on ImageNet using this repo with 8 NVIDIA V100 GPU
 <td align="center"><tt>2bf912</tt></td>
 </tr>
   
-<tr><td align="left">MoCo BN<br/> +MeanEnc</td>
+<tr><td align="left">MoCo<br/> +MeanEnc</td>
 <td align="center">100</td>
 <td align="center">32.2h</td>
 <td align="center">67.7</td>
